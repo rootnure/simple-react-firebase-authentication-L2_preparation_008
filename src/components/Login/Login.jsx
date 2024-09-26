@@ -7,14 +7,14 @@ const Login = () => {
 
     const googleProvider = new GoogleAuthProvider();
 
-    // signInWithPopup(auth, googleProvider)
-    //     .then(result => {
-    //         console.log(result);
-    //     })
-    //     .catch(err => console.log(err))
 
     const handleGoogleSingIn = () => {
-        console.log('google is coming....');
+        signInWithPopup(auth, googleProvider)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+            })
+            .catch(err => console.error(err))
     }
 
     return (
