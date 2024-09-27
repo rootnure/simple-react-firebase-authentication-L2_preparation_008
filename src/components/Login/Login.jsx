@@ -36,7 +36,7 @@ const Login = () => {
                 console.log(loggedInUser);
                 setUser(loggedInUser);
             })
-            .catch(err => console.error(err))
+            .catch(err => console.error(err?.message || 'something went wrong...'))
     }
 
     return (
