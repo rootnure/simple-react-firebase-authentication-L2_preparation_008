@@ -1,4 +1,4 @@
-# React + Vite (Recap) [Sick Day 4]
+# React + Vite (Recap) [Sick Day 5]
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
